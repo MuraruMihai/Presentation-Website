@@ -1,0 +1,53 @@
+.services-desc-container{
+    max-width: 1600px;
+    width: 100%;
+    display: grid;
+    gap: 1rem;
+    margin: auto;
+    padding: 1rem 1rem 3rem;
+}
+.service-description-item{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 1rem;
+}
+.service-description-item-2{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 1rem;
+}
+
+.service-desc-image-section{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.service-desc-image-icon{
+    font-size: 5rem;
+    margin: auto;
+}
+
+.service-desc-item{
+    margin-bottom: 1rem;
+}
+
+.service-desc-item h3{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.color_wp{
+    color: #003c56;
+}
+.color_woo{
+    color: #674399;
+}
+.color_shopify{
+    color: #95bf47;
+}
+.color_react{
+    color: #61dafb;
+}
+.color_mkt{
+
+}

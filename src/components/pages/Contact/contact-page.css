@@ -1,0 +1,11 @@
+#contactPage{
+    width: 100%;
+    justify-content: center;
+    background: var(--global-color-primary);
+    padding: 5rem 0;
+}
+
+#contactPage h1{
+    margin: auto;
+    color: #ffffff;
+}

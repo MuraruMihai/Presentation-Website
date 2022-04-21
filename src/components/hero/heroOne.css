@@ -1,0 +1,44 @@
+.hero__one-container{
+    background: url("../../assets/images/banner5.jpg");
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    gap: 0;
+    place-items: center;
+}
+
+.container-one{
+    width: 50%;
+    background: #ffffff;
+    padding: 10rem;
+    box-shadow: 2rem 2rem #d2a973b5;
+}
+
+.container-one h1{
+    color: tan;
+    font-size: 4rem;
+    margin-bottom: 15px;
+}
+
+.container-one p{
+    color: teal;
+    font-size: 2rem;
+}
+
+.container-one button{
+    padding: 0.3rem 0.7rem;
+    background: transparent;
+    font-size: 1.2rem;
+    margin: 30px 0;
+    font-weight: 600;
+    color: teal;
+    cursor: pointer;
+    border-bottom: 1px solid teal;
+    border-right: 1px solid teal;
+}
+
+.hero_mask{
+    width: 50%;
+    background: transparent;
+    height: 100vh;
+}

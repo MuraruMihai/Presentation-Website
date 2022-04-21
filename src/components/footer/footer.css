@@ -1,0 +1,72 @@
+footer{
+    padding: 2rem 0 0;
+    background: var(--global-color-primary-dark);
+}
+
+.footer__container{
+    max-width: 1600px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 2rem;
+}
+
+.footer__left{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__left a, .footer_left__socials{
+    margin: 0 auto;
+}
+
+.footer_left__socials ul{
+    display: flex;
+}
+
+.footer_left__socials ul li{
+    padding: 1rem 0.5rem;
+    font-size: 2rem;
+    color: var(--global-color-accent);
+}
+
+.footer_left__socials ul li a{
+    color: var(--global-color-accent);
+    transition: all 0.5s ease;
+}
+
+.footer_left__socials ul li a:active{
+    color: var(--color-text-third);
+}
+
+.footer_left__socials ul li a:hover{
+    color: var(--color-text-third);
+}
+
+.footer_menu ul{
+    display: flex;
+    gap: 1rem;
+    font-size: 1.5rem;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer_menu ul a{
+    color: var(--global-color-accent);
+    width: fit-content;
+    margin: auto;
+}
+.footer_menu ul a:active{
+    border-bottom: 1px solid var(--global-color-accent);
+}
+
+.footer_menu ul a:hover{
+    color: var(--color-text-third);
+}
+
+/* ================= SMALL DEVICES =============== */
+@media screen and (max-width: 767px) {
+    .footer__container{
+        grid-template-columns: 1fr;
+    }
+}

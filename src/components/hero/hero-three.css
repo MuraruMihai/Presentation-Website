@@ -1,0 +1,89 @@
+#heroThree {
+    display: flex;
+    place-items: center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    left: 0;
+    text-align: center;
+    color: var(--color-white);
+    background: url("../../assets/images/background-2402133_1920.png") center center/cover no-repeat;
+    box-shadow: -1px 5px 10px 1px rgb(0 0 0 / 20%);
+    min-height: 500px;
+    background-attachment: fixed;
+}
+
+.hero-three__container {
+    max-width: 1600px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    color: var(--global-color-primary-dark);
+}
+
+.hero-three__container h1 {
+    font-size: 3.75rem;
+    color: #ffffff;
+}
+
+.hero-three__container h4 {
+    margin-bottom: 10vh;
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+.hero-three__services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.hero-three__services .hero-three__service {
+    border: 1px solid #ffffff;
+    padding: 1rem 2rem;
+    aspect-ratio: 2/1;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 4rem;
+    background: #ffffffe6;
+    transition: all 0.5s ease-in;
+}
+
+.hero-three__services .hero-three__service:hover {
+    background: #15546c;
+    color: #fff;
+    cursor: pointer;
+}
+
+.hero-three__service-icon {
+    font-size: 4rem;
+}
+
+.hero-three__services .hero-three__service h4 {
+    font-size: 2rem;
+}
+
+/* ================ MEDIA QUERIES (MEDIUM DEVICES) ====================== */
+@media screen and (max-width: 1024px) {
+    .hero-three__services {
+        grid-template-columns: auto;
+    }
+}
+
+/* ================ MEDIA QUERIES (SMALL DEVICES) ====================== */
+@media screen and (max-width: 767px) {
+    #heroThree {
+        height: auto;
+        padding: 6rem 1rem 1rem;
+    }
+
+    .hero-three__container h4 {
+        margin-bottom: 2rem;
+    }
+
+    .hero-three__services {
+        margin: 0 5%;
+    }
+}

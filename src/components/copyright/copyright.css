@@ -1,0 +1,9 @@
+.copyright{
+    background: #000000;
+    color: #ffffff;
+    padding: 1rem;
+}
+
+.copyright p {
+    text-align: center;
+}

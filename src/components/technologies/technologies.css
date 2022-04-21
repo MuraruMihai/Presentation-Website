@@ -1,0 +1,74 @@
+.technologies__container{
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 3rem 0;
+
+}
+.technologies-slider__container{
+    /*padding-bottom: 40px !important;*/
+    width: 100%;
+    padding: 1rem;
+}
+
+.technologies__slide{
+    /*width: 300px;*/
+    /*max-width: 70%;*/
+    /*background: #2c2c6c;*/
+    border-right: 1px solid gray;
+    cursor: pointer;
+    max-width: 347px;
+    overflow: hidden;
+}
+
+.technologies__slider_content{
+    display: flex;
+    justify-content: center;
+
+}
+
+.technologies__slider_content .technologies__icon{
+    font-size: 3rem;
+    margin-right: 1rem;
+}
+
+.technologies__slider_content p {
+    font-size: 2rem;
+    margin: auto 0;
+}
+
+.technologies__slider_content-wp .technologies__icon, .technologies__slider_content-wp p{
+    color: #003c56;
+}
+.technologies__slider_content-woo .technologies__icon, .technologies__slider_content-woo p{
+    color: #674399;
+}
+.technologies__slider_content-shopify .technologies__icon, .technologies__slider_content-shopify p{
+    color: #95bf47;
+}
+.technologies__slider_content-react .technologies__icon, .technologies__slider_content-react p{
+    color: #61dafb;
+}
+.technologies__slider_content-html .technologies__icon, .technologies__slider_content-html p{
+    color: #e54c21;
+}
+.technologies__slider_content-css .technologies__icon, .technologies__slider_content-css p{
+    color: #007dc6;
+}
+.technologies__slider_content-js .technologies__icon, .technologies__slider_content-js p{
+    color: #fcdc00;
+}
+.technologies__slider_content-jq .technologies__icon, .technologies__slider_content-jq p{
+    color: #0769ad;
+}
+.technologies__slider_content-php .technologies__icon, .technologies__slider_content-php p{
+    color: #8892bf;
+}
+
+@media screen and (max-width: 767px){
+    .technologies__slider_content-woo p{
+        font-size: 2rem !important;
+    }
+    .technologies__slider_content p{
+        font-size: 2.5rem;
+    }
+}

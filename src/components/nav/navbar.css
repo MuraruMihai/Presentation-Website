@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.logo_link{
+    height: 100%;
+}
+.logo{
+    font-size: 30px;
+}
+
+.logo_img{
+    height: 90%;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90px;
+    background-color: #00000094;
+    /*background-color: transparent;*/
+    color: #ffffff;
+    box-shadow: 0 4px 2px -2px #696a6eb0;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+.navbar.sticky{
+    background-color: var(--global-color-primary);
+}
+
+.navbar.sticky .nav__item{
+    color: #ffffff;
+}
+
+.nav__links{
+    display: flex;
+    /*flex-direction: column;*/
+    justify-content: flex-end;
+    list-style: none;
+    width: 75%;
+}
+
+.nav__item{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.3rem;
+    padding: 1rem 2rem;
+    margin: 0 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+
+    position: relative;
+
+}
+
+.nav__item:hover{
+    padding: 1rem 2rem 3px;
+    border-bottom: 2px solid var(--color-text-third);
+    border-collapse: initial;
+    transform: scale(1.03);
+}
+
+.nav__item.active{
+    padding: 1rem 2rem 3px;
+    border-bottom: 2px solid var(--color-text-third);
+    border-collapse: initial;
+    transform: scale(1.03);
+}
+
+.navbar.sticky .nav__item:hover{
+    border-bottom: 2px solid #ffffff;
+}
+
+.navbar.sticky .nav__item.active{
+    border-bottom: 2px solid #ffffff;
+}
+
+.mobile__menu-icon{
+    display: none;
+}
+
+.nav__item_wave{
+    display: none;
+}
+
+/* ================ MEDIA QUERIES (MEDIUM DEVICES) ====================== */
+@media screen and (max-width: 1024px){
+    .container{
+        width: var(--container-width-md);
+    }
+
+    .logo, .logo_img{
+        display: flex;
+        position: absolute;
+        top: 0.5rem;
+        left: 1rem;
+    }
+
+    .navbar{
+        background: #00000094;
+    }
+
+    .nav__links{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 90vh;
+        position: absolute;
+        top: 90px;
+        right: -100%;
+        opacity: 1;
+        transition: all 0.5s ease-in-out;
+        justify-content: flex-start;
+        padding-top: 80px;
+    }
+
+    .nav__links.active {
+        background: var(--global-color-primary);
+        right: 0;
+        opacity: 1;
+        transition: all 0.5s cubic-bezier(0, 0, 0.2, 1);
+        z-index: 1;
+    }
+
+    .nav__item{
+        color: var(--color-white);
+        text-align: center;
+        padding: 32px;
+        width: 100%;
+        transition: all 0.5s ease-in;
+        font-size: 2rem;
+    }
+
+    .nav__item:hover{
+        border-bottom: 1px solid var(--color-white);
+    }
+
+    .nav__item.active, .nav__item{
+        border-bottom: none;
+        margin-left: 0;
+    }
+    .navbar.sticky .nav__item.active {
+        border-bottom: none;
+    }
+
+    .nav__item.active li{
+        border-bottom: 3px solid var(--color-white);
+        width: 50%;
+        margin: auto;
+        padding-bottom: 10px;
+    }
+
+    .nav__item li{
+        width: 50%;
+        margin: auto;
+        padding-bottom: 10px;
+    }
+
+    .mobile__menu-icon{
+        display: block;
+        position: absolute;
+        font-size: 30px;
+        color: var(--global-color-accent);
+        background-color: transparent;
+        border: none;
+        outline: none;
+        top: 1.2rem;
+        right: 1rem;
+    }
+
+    .navbar.sticky .mobile__menu-icon{
+        color: var(--global-color-accent);
+    }
+
+    .nav__item_wave{
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        display: block;
+        height: 100%;
+    }
+    .nav__item_wave svg{
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 200px;
+    }
+
+    .nav__item_wave svg path{
+        stroke: #002893;
+        fill: #1e409a;
+    }
+}
+
+
+/* ================ MEDIA QUERIES (SMALL DEVICES) ====================== */
+@media screen and (max-width: 768px){
+    .container{
+        width: var(--container-width-sm);
+    }
+
+    .navbar{
+        height: 75px;
+    }
+
+    .nav__links{
+        /*background: repeating-linear-gradient(45deg, #1e409a, #1e409af0 100px)*/
+        top: 75px;
+    }
+
+    .nav__links.active{
+        /*background: repeating-linear-gradient(45deg, #1e409a, #1e409af0 100px)*/
+    }
+
+    .nav__item{
+        border-bottom: none;
+        margin-left: 0;
+    }
+
+    .nav__item.active li{
+        border-bottom: 3px solid var(--color-white);
+        width: 50%;
+        margin: auto;
+        padding-bottom: 10px;
+    }
+
+    .nav__item li{
+        width: 50%;
+        margin: auto;
+        padding-bottom: 10px;
+    }
+
+}

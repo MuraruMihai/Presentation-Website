@@ -1,0 +1,129 @@
+#services-two{
+    /*background-image: url("../../assets/images/banner2.jpg");*/
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding: 4rem 0;
+    background: var(--global-color-primary);
+}
+.services-two__container{
+    max-width: 1600px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 1rem;
+    margin: auto;
+    padding: 1rem 1rem 3rem;
+}
+
+.services-two__left{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    background-color: #000000b8;
+    color: #ffffff;
+    justify-content: center;
+}
+
+.services-two__left h1{
+    margin-bottom: 2rem;
+}
+
+.services-two__left p{
+    font-size: 1.5rem;
+}
+
+.services-two__right{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.service-two__item{
+    border: 1px solid #000000;
+    padding: 2rem 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: #000000bd;
+    color: #ffffff;
+    transition: all 0.5s ease-in;
+}
+
+.service-two__item:hover{
+    background: #15546c;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 3px 4px 5px black;
+}
+
+.services_two-item-icon{
+    font-size: 3rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+.service-two__item h1{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.service-two__item .tags{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.5rem;
+    position: absolute;
+    bottom: 25px;
+    user-select: none;
+}
+
+.service-two__item .tags span{
+    padding: 0.2rem 0.5rem;
+    border: 1px solid #ffffff;
+    border-radius: 0.3rem;
+    text-align: center;
+    color: #ffffff;
+    font-size: 0.7rem;
+    transition: all 0.5s ease;
+}
+
+.service-two__item .tags span:hover{
+    background: #ffffff;
+    color: var(--global-color-primary-dark);
+}
+
+/* ================ MEDIA QUERIES (MEDIUM DEVICES) ====================== */
+@media screen and (max-width: 1024px){
+    .services-two__container{
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+    }
+    .services-two__left h1{
+        text-align: center;
+    }
+
+    .services-two__right h1{
+        font-size: 1.75rem;
+    }
+    .service-two__item .tags{
+        grid-template-columns: 1fr 1fr;
+        bottom: 10px;
+    }
+}
+
+
+/* ================ MEDIA QUERIES (SMALL DEVICES) ====================== */
+@media screen and (max-width: 767px){
+    .services-two__left p{
+        text-align: center;
+    }
+    .services-two__right{
+        grid-template-columns: 1fr;
+    }
+    .service-two__item .tags{
+        grid-template-columns: 1fr 1fr 1fr;
+        bottom: 10px;
+    }
+}
